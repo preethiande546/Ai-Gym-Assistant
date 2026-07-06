@@ -9,7 +9,9 @@ import httpx
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 from database.db import get_connection, init_db
-
+@app.get("/")
+def root():
+    return {"message": "AI Gym Backend is running"}
 app = FastAPI(title="AI Gym & Fitness Assistant Backend")
 init_db()
 
