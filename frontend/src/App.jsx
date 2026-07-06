@@ -40,7 +40,7 @@ const dashboardMenu = [
   { id: 'devices', label: 'Devices' },
 ];
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8018';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-gym-assistant-qdcw.onrender.com';
 
 function App() {
   const [messages, setMessages] = useState([
